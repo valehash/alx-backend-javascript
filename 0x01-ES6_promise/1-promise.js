@@ -7,9 +7,10 @@ export default function getResponseFromAPI(success) {
                 body: { message: "Success" }
             };
             resolve(response);
-        }else{
-                const response = "Error: The fake API is not working currently";
-                reject(response);}
+       }else{
+                const response = "The fake API is not working currently";
+                reject(new Error(response));
+            }
             });
-        }
+        } 
 
