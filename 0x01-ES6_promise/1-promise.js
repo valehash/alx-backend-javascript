@@ -4,12 +4,14 @@ export default function getResponseFromAPI(success) {
         if (success === true) {
             const response = {
                 status: 200,
-                data: { message: "Success" }
+                body: { message: "Success" }
             };
             resolve(response);
-        } else {
-            const response = 'The fake API is not working currently';
-            reject(response);
+        } else if (sucess == false)
+            {
+                const response = 'The fake API is not working currently';
+                reject(response);
+
         }
     });
 }
