@@ -4,13 +4,14 @@ function getFullResponseFromAPI(success) {
         if (success === true) {
             const response = {
                 status: 200,
-                body: { message: "Success" }
-            };
+                body: { message: "Success" }};
             resolve(response);
-       }else{
+       }else{   
                 const response = "The fake API is not working currently";
                 reject(new Error(response));
             }
+            
             });
-        } 
+        }
+
 export default getFullResponseFromAPI;
