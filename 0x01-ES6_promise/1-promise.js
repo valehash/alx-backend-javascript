@@ -8,7 +8,7 @@ export default function getResponseFromAPI(success) {
             };
             resolve(response);
         }else{
-                const response = "The fake API is not working currently";
+                const response = "Error: The fake API is not working currently";
                 reject(response);}
             });
         }
