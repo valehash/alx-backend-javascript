@@ -1,4 +1,4 @@
-export default function getResponseFromAPI(success) {
+function getResponseFromAPI(success) {
     return new Promise((resolve, reject) => {
         // Simulating a successful response
         if (success === true) {
@@ -13,4 +13,4 @@ export default function getResponseFromAPI(success) {
             }
             });
         } 
-
+export default function getResponseFromAPI()
