@@ -5,10 +5,7 @@ export default function updateStudentGradeByCity(students, city, NewgradeArray) 
   return StudentsLoc.map((students) => {
     let grade = 'N/A';
     for (const gradeobj of NewgradeArray) {
-      if (gradeobj.StudentId === StudentsLoc.id) {
-        grade = gradeobj.grade;
-        break;
-      }
+      let grade = gradeobj && gradeobj.grade !== null ? gradeobj.grade : 'N/A';
     }
     return {
       ...students,
