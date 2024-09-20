@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import calculator from './2-calcul.js' 
+import calculator from './2-calcul_chai.js' 
 
 describe('calculation', () => {
   it("should add two rounded numbers and give the correct output", () => {
