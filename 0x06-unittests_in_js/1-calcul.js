@@ -1,4 +1,4 @@
-function calculator(a, b, Type) {
+function calculator(Type, a, b) {
  if (Type === 'SUM') {
    res = Math.round(a) + Math.round(b)
  }
