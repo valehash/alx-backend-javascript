@@ -1,5 +1,6 @@
-function calculator(Type, a, b) {
- if (Type === 'SUM') {
+export default function calculator(Type, a, b) {
+let res; 
+if (Type === 'SUM') {
    res = Math.round(a) + Math.round(b)
  }
  if (Type === 'SUBTRACT') {
@@ -13,5 +14,3 @@ function calculator(Type, a, b) {
  }
   return res
 }
-
-module.exports = calculator;
