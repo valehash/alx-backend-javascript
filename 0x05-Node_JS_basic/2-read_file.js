@@ -24,8 +24,8 @@ function countStudents(path) {
     }
 
     const totalStudents = lines.length - 1;
-    const formattedCsStudents = csStudents.map((name) => ` ${name}`);
-    const formattedSweStudents = sweStudents.map((name) => ` ${name}`);
+    const formattedCsStudents = csStudents.map((name) => `${name}`);
+    const formattedSweStudents = sweStudents.map((name) => `${name}`);
 
     console.log(`Number of students: ${totalStudents}`);
     console.log(`Number of students in CS: ${csStudents.length}. List: ${formattedCsStudents.join(', ')}`);
