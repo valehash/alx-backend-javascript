@@ -3,7 +3,7 @@ const fs = require('fs');
 
 function countStudents(path) {
 	if (!path) {
-		console.log("Cannot load the database");
+		throw new error("Cannot load the database");
 		return; 
 	}  
 	try {
@@ -26,14 +26,14 @@ function countStudents(path) {
 		const total_number = lines.length;
 		const cs_list = ArrayofCS.map(student => student[0]);
 		const swe_list= ArrayofSWE.map(student => student[0]);
-		const cs_listf = cs_list.map(name => ` ${name}`);
-		const swe_listf = swe_list.map(name => ` ${name}`);
+		const cs_listf = cs_list.map(name => `${name}`);
+		const swe_listf = swe_list.map(name => `${name}`);
 		console.log(`Number of students: ${total_number}`);
 		console.log(`Number of students in CS: ${ArrayofCS.length}. List: ${cs_listf}`);
 		console.log(`Number of students in SWE: ${ArrayofSWE.length}. List: ${swe_listf}`);
    	}
 	catch(error){
-		console.log(error);
+		throw new error("Cannot load the database");
 	}
 }
 module.exports = countStudents;
