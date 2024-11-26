@@ -26,8 +26,8 @@ function countStudents(path) {
 		console.log(ArrayofCS)
 		const cs_list = ArrayofCS.map(student => student[0]);
 		const swe_list= ArrayofSWE.map(student => student[0]);
-		console.log(`The number of cs is ${ArrayofCS.length} List: ${cs_list}`)
-		console.log(`The number of cs is ${ArrayofSWE.length} List: ${swe_list}`) 
+		console.log(`Number of students in CS: ${ArrayofCS.length}. List: ${cs_list}`)
+		console.log(`Number of students in SWE: ${ArrayofSWE.length}. List: ${swe_list}`) 
 		const total_number = lines.length
 		
 		console.log(`Number of students: ${total_number}`);
