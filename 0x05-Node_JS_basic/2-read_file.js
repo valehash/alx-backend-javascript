@@ -3,7 +3,7 @@ const fs = require('fs');
 
 function countStudents(path) {
 	if (!path) {
-		throw new error("Cannot load the database");
+		throw new Error("Cannot load the database");
 		return; 
 	}  
 	try {
@@ -33,7 +33,7 @@ function countStudents(path) {
 		console.log(`Number of students in SWE: ${ArrayofSWE.length}. List: ${swe_listf}`);
    	}
 	catch(error){
-		throw new error("Cannot load the database");
+		throw new Error("Cannot load the database");
 	}
 }
 module.exports = countStudents;
