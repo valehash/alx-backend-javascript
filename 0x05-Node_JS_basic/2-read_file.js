@@ -26,9 +26,11 @@ function countStudents(path) {
 		const total_number = lines.length;
 		const cs_list = ArrayofCS.map(student => student[0]);
 		const swe_list= ArrayofSWE.map(student => student[0]);
+		const cs_listf = cs_list.map(name => ` ${name}`);
+		const swe_listf = swe_list.map(name => ` ${name}`);
 		console.log(`Number of students: ${total_number}`);
-		console.log(`Number of students in CS: ${ArrayofCS.length}. List: ${cs_list}`);
-		console.log(`Number of students in SWE: ${ArrayofSWE.length}. List: ${swe_list}`);
+		console.log(`Number of students in CS: ${ArrayofCS.length}. List: ${cs_listf}`);
+		console.log(`Number of students in SWE: ${ArrayofSWE.length}. List: ${swe_listf}`);
    	}
 	catch(error){
 		console.log(error);
