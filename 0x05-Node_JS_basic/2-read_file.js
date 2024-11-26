@@ -33,7 +33,7 @@ function countStudents(path) {
 		console.log(`Number of students: ${total_number}`);
    	}
 	catch(error){
-		console.log("Cannot load database", error);
+		console.log(error);
 	}
 }
 module.exports = countStudents;
